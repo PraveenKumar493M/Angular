@@ -11,7 +11,6 @@ angular.module('app', ['ngRoute'])
       });
   }])
 
-
   .controller('HomeController', ['$http', 'DataService', function($http, DataService) {
     var records = this;
     records.items = [];
