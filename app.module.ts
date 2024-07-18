@@ -11,7 +11,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
   styleUrl: './text-field-autofill-monitor-example.css',
   standalone: true,
   imports: [MatFormFieldModule, MatInputModule, MatButtonModule],
-})
+});
+
 export class TextFieldAutofillMonitorExample implements AfterViewInit, OnDestroy {
   @ViewChild('first', {read: ElementRef}) firstName: ElementRef<HTMLElement>;
   @ViewChild('last', {read: ElementRef}) lastName: ElementRef<HTMLElement>;
