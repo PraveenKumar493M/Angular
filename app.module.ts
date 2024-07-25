@@ -4,7 +4,6 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 
-
 /** @title Monitoring autofill state with AutofillMonitor */
 @Component({
   selector: 'text-field-autofill-monitor-example',
