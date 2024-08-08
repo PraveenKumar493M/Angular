@@ -24,6 +24,7 @@ angular.module('app', ['ngRoute'])
         .catch(function(error) {
           console.error('Error fetching data:', error);
         });
+      
     };
 
     // Create new item
