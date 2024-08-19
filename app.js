@@ -10,7 +10,6 @@ angular.module('app', ['ngRoute'])
         redirectTo: '/'
       });
   }])
-  
   .controller('HomeController', ['$http', 'DataService', function($http, DataService) {
     var records = this;
     records.items = [];
@@ -24,7 +23,6 @@ angular.module('app', ['ngRoute'])
         .catch(function(error) {
           console.error('Error fetching data:', error);
         });
-      
     };
 
     // Create new item
