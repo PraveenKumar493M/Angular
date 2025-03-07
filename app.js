@@ -25,7 +25,7 @@ angular.module('app', ['ngRoute'])
         });
     };
 
-    // Create new item
+    // Create new record
     records.createItem = function() {
       DataService.createItem(records.newItem)
         .then(function(response) {
