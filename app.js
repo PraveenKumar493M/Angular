@@ -41,7 +41,6 @@ angular.module('app', ['ngRoute'])
     records.fetchData();
   }])
 
-
   .service('DataService', ['$http', function($http) {
     var baseUrl = 'http://localhost:5000';
 
