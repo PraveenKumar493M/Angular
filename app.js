@@ -24,7 +24,6 @@ angular.module('app', ['ngRoute'])
           console.error('Error fetching data:', error);
         });
     };
-    
     // Create new record
     records.createItem = function() {
       DataService.createItem(records.newItem)
@@ -39,7 +38,6 @@ angular.module('app', ['ngRoute'])
     // Initial fetch
     records.fetchData();
   }])
-
   .service('DataService', ['$http', function($http) {
     var baseUrl = 'http://localhost:5000';
 
