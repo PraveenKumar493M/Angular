@@ -20,7 +20,6 @@ export class TextFieldAutofillMonitorExample implements AfterViewInit, OnDestroy
   lastNameAutofilled: boolean;
   constructor(private _autofill: AutofillMonitor) {}
 
-
   ngAfterViewInit() {
     this._autofill
       .monitor(this.firstName)
