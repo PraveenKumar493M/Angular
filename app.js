@@ -14,7 +14,6 @@ angular.module('app', ['ngRoute'])
     var records = this;
     records.items = [];
     records.newItem = {};
-
     records.fetchData = function() {
       DataService.getItems()
         .then(function(response) {
