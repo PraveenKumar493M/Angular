@@ -43,7 +43,6 @@ angular.module('app', ['ngRoute'])
     this.getItems = function() {
       return $http.get(baseUrl + '/items');
     };
-
     this.createItem = function(item) {
       return $http.post(baseUrl + '/item', item);
     };
