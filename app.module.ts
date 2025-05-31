@@ -28,6 +28,7 @@ export class TextFieldAutofillMonitorExample implements AfterViewInit, OnDestroy
       .monitor(this.lastName)
       .subscribe(e => (this.lastNameAutofilled = e.isAutofilled));
   }
+  
   ngOnDestroy() {
     this._autofill.stopMonitoring(this.firstName);
     this._autofill.stopMonitoring(this.lastName);
