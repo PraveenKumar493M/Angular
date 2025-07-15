@@ -36,6 +36,7 @@ angular.module('app', ['ngRoute'])
           console.error('Error creating item:', error);
         });
     };
+    
     // Initial fetch
     records.fetchData();
   }])
