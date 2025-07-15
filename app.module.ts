@@ -3,6 +3,7 @@ import {AfterViewInit, Component, ElementRef, OnDestroy, ViewChild} from '@angul
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+
 /** @title Monitoring autofill state with AutofillMonitor test */
 @Component({
   selector: 'text-field-autofill-monitor-example',
