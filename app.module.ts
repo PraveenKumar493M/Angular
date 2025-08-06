@@ -11,6 +11,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
   standalone: true,
   imports: [MatFormFieldModule, MatInputModule, MatButtonModule],
 });
+
 export class TextFieldAutofillMonitorExample implements AfterViewInit, OnDestroy {
   @ViewChild('first', {read: ElementRef}) firstName: ElementRef<HTMLElement>;
   @ViewChild('last', {read: ElementRef}) lastName: ElementRef<HTMLElement>;
@@ -30,3 +31,4 @@ export class TextFieldAutofillMonitorExample implements AfterViewInit, OnDestroy
     this._autofill.stopMonitoring(this.lastName);
   }
 }
+
