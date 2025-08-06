@@ -10,6 +10,7 @@ angular.module('app', ['ngRoute'])
         redirectTo: '/'
       });
   }])
+  
   .controller('HomeController', ['$http', 'DataService', function($http, DataService) {
     var records = this;
     records.items = [];
@@ -50,3 +51,4 @@ angular.module('app', ['ngRoute'])
       return $http.post(baseUrl + '/item', item);
     };
   }]);
+
